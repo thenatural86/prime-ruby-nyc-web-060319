@@ -1,10 +1,7 @@
 # Add  code here!
-def prime?(number)
-  (2..(number -1)).each do |n|
-    if number % n == 0 
-      false 
-  else 
-      true 
+def prime?(num)
+  (2..(num - 1)).each do |n|
+    return false if num % n == 0
   end
-end 
-  
+  true
+end
